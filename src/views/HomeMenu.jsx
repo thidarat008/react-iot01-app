@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Button, Avatar } from "@mui/material";
+import { Box, Typography, Button, Avatar, Link } from "@mui/material";
 
 function HomeMenu() {
   return (
@@ -13,6 +13,18 @@ function HomeMenu() {
           <Typography variant="h3" sx={{ textAlign: "center", mt: 2 }}>
             IoT Calculate by thidarat
           </Typography>
+          <Link to={'/calnum'}>
+          <Button fullWidth variant="contained" sx={{mt: 2, backgroundColor: '#C39BD3' }}>
+            <Typography variant="h6" sx={{ textAlign: "center", mt: 2 }} >
+              Go to Calculate Number
+            </Typography>
+          </Button>
+          </Link>
+          <Button component={Link} to={'/calmoneyshare'} fullWidth variant="contained" sx={{mt: 2, backgroundColor: '#A569BD' }}>
+            <Typography variant="h6" sx={{ textAlign: "center", mt: 2 }} >
+              Go to Calculate MoneyShare
+            </Typography>
+            </Button>
         </Box>
       </Box>
     </>
