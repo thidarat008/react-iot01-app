@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function HomeMenu() {
-  return (
-    <div>Thidarat Hirun</div>
-  )
+  return <>Thidarat Hirun</>;
 }
 
-export default HomeMenu
+export default HomeMenu;
